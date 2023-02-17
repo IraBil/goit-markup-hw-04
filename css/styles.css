@@ -40,6 +40,7 @@ img {
     --wight-button: #FFFFFF;
     --gray: #434455;
     --wight-footer-text: #E7E9FC;
+    --gray-icon: #AFB1B8;
 }
 
 .container {
@@ -137,8 +138,21 @@ img {
 }
 
 .section-order {
+    height: 600px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 188px 0;
-    background: var(--basic-black);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background: var(--basic-black); */
+
 }
 
 .title-h1 {
@@ -192,6 +206,26 @@ img {
 
 .our-advantages-offset:last-child {
     margin-right: 0px;
+}
+
+/* .our-advantages-offset::before {
+    content: '';
+    display: block;
+    height: 112px;
+    background-color:var(--wight);
+    background-image: url(..);
+    border-radius: 4px;
+    margin-bottom: 8px;
+} */
+
+.our-advantages_icon {
+    background-color: var(--wight);
+    height: 112px;
+    width: 264px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .title-h2 {
@@ -253,7 +287,7 @@ img {
 }
 
 .our-team-section {
-        background-color: var(--wight);
+    background-color: var(--wight);
 }
 
 .our-team {
@@ -299,14 +333,33 @@ img {
     margin-top: 8px;
 }
 
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers_icon {
+    border-color: var(--gray-icon);
+    height: 112px;
+    width: 264px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .footer {
     background-color: var(--basic-black);
 }
 
+.footer-row {
+    display: flex;
+}
+
 .footer-block-logo {
     padding-top: 100px;
-    padding-bottom: 100px;  
+    padding-bottom: 100px; 
+    margin-right: 120px; 
 }
 
 .footer-text {
@@ -317,6 +370,21 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.footer-block-media {
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+    background-color: aqua;
+}
+
+.footer-media-text {
+    margin-top: 0;
+    margin-bottom: 0;    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--wight-button);
 }
 
 .title {
