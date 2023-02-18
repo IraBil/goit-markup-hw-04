@@ -179,8 +179,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    border-color: var(--iris);
     border-radius: 4px;
+    border: none;
 }
 
 .button-order:hover,
@@ -220,15 +220,20 @@ img {
     margin-bottom: 8px;
 } */
 
-.our-advantages_icon {
-    background-color: var(--wight);
+.our-advantages-picture {
+    display: flex;
+    background-color: var(--wight);    
     height: 112px;
     width: 264px;
     border-radius: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 8px;  
+    justify-content: center;  
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 24px;    
 }
+
+/* .our-advantages-icon {
+} */
 
 .title-h2 {
     text-decoration: none;
@@ -315,7 +320,7 @@ img {
 }
 
 .our-team-text {
-    padding: 32px 0px;
+    padding: 32px 16px;
 }
 .our-team-name {
     text-align: center;
@@ -338,10 +343,12 @@ img {
 .our-team-soc-net-row {
     display: flex;
     margin-top: 8px;
-    padding-left: 16px;
 }
 
-.our-team-soc-net {   
+.our-team-soc-net {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -362,12 +369,6 @@ img {
 .our-team-soc-net-icon {
     display: table-cell;
     fill: var(--wight);
-    width: 16px;
-    height: 16px;
-    /* justify-content: center; */
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 12px;
 }
 
 .customers {
@@ -395,8 +396,8 @@ img {
 
 .customers-company:hover,
 .customers-company:focus,
-.customers-company svg:hover,
-.customers-company svg:focus {
+.customers-company:hover svg,
+.customers-company:focus svg {
     cursor: pointer;
     border-color: var(--ocean);
     fill: var(--ocean);
@@ -414,10 +415,10 @@ img {
 
 .footer-row {
     display: flex;
+    padding-top: 100px;
 }
 
 .footer-block-logo {
-    padding-top: 100px;
     padding-bottom: 100px; 
     margin-right: 120px; 
 }
@@ -433,9 +434,6 @@ img {
 }
 
 .footer-block-media {
-    padding-top: 100px;
-    /* padding-bottom: 100px; */
-    /* background-color: aqua; */
 }
 
 .footer-media-text {
@@ -459,9 +457,11 @@ img {
     border-radius: 50%;
     padding-top: 8px;
     margin-right: 16px;
-
 }
 
+.footer-media-sigh:last-child {
+    margin-right: 0px;
+}
 .footer-media-icon {
     display: table-cell;
     fill: var(--wight);
@@ -524,7 +524,7 @@ img {
 .button:hover,
 .button:focus {
     color: var(--wight-button);    
-    background-color: var(--blue);
+    background-color: var(--iris);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -569,6 +569,10 @@ img {
     line-height: 1.2;
 }
 
+.filter-cards:hover,
+.filter-cards:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .filter {
     margin-top: 8px;
     color: var(--gray);
